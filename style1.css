@@ -1,3 +1,4 @@
+/*Background*/
 body {
     margin: 0;
     text-align: center;
@@ -12,7 +13,7 @@ body {
 .text {
     color: rgb(80, 54, 21)
 }
-
+/*Email Button first page*/
 .emailart {
     display: inline-block;
     background-color: rgb(170, 148, 121);
@@ -21,10 +22,14 @@ body {
     border-radius: 8px;
     font-size: 18px;
     cursor: pointer;
-    transform: translateY(300px) translateX(250px);
+    transition: 0.2s ease;
+    transform: translateY(300px) translateX(250px) ;
    
 }
-
+.emailart:hover{
+    transform: scale(1.05) translateY(300px) translateX(250px);
+}
+/*Gallery Button(in first page)*/
 .galleryart {
     display: inline-block;
     background-color: rgb(170, 148, 121);
@@ -33,6 +38,58 @@ body {
     border-radius: 8px;
     font-size: 18px;
     cursor: pointer;
-    transform: translateY(250px) translateX(120px);
+    transform: translateY(300px) translateX(-100px);
    
+}
+.galleryart:hover{
+    transform: scale(1.05) translateY(300px) translateX(-100px);
+}
+.showcase{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.frame{
+    width: 300px;
+    background-color: #a08059;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.frame img{
+    width: 100%;
+    display: block;
+}
+
+.gamelinks{
+    display: inline-block;
+    background-color: rgb(245, 188, 119);
+    color: aliceblue;
+    padding: 32px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.Gamebtn{
+display: inline-block; 
+background-color: #856134; 
+color: white; 
+padding: 12px 24px; 
+border-radius: 8px; 
+text-decoration: none; 
+font-size: 18px; 
+cursor: pointer;
+
+}
+.Gamerepobtn{
+display: inline-block; 
+background-color: #856134; 
+color: white; 
+padding: 12px 24px; 
+border-radius: 8px; 
+text-decoration: none; 
+font-size: 18px; 
+cursor: pointer;
+
 }
